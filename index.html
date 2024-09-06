@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Login Page -->
+        <div class="login-page">
+            <center><img src="images.png" alt="logo"></center>
+            <center><h1 class="app-name">Real Estate App</h1></center>
+            <center><p class="slogan">Find your dream home in a few clicks!</p></center>
+            <center><input type="text" placeholder="Username"></center>
+            <center><input type="password" placeholder="Password"></center>
+            <center><button class="login-button">Login</button></center>
+        </div>
+
+        <!-- Search Results Page -->
+        <div class="search-results">
+            <header>
+                <button class="back-button">←</button>
+                <input type="text" id="search-bar" class="search-bar" placeholder="Search for apartments...">
+                <button class="filter-button">⚙</button>
+            </header>
+            <div class="results-list">
+                <div class="result-item" data-price="22000" data-address="Sector 28, Gurgaon" data-image="pic1.jpg">
+                    <img src="pic1.jpg" alt="Sky Dandelions Apartment">
+                    <div class="info">
+                        <h2>Sky Dandelions Apartment</h2>
+                        <p>Sector 28, Gurgaon</p>
+                        <p class="price">₹ 22,000/month</p>
+                    </div>
+                </div>
+                <div class="result-item" data-price="17000" data-address="Sector 27, Gurgaon" data-image="pic2.jpg">
+                    <img src="pic2.jpg" alt="Wings Tower">
+                    <div class="info">
+                        <h2>Wings Tower</h2>
+                        <p>Sector 27, Gurgaon</p>
+                        <p class="price">₹ 17,000/month</p>
+                    </div>
+                </div>
+                <div class="result-item" data-price="18000" data-address="MG road, Gurgaon" data-image="pic3.jpg">
+                    <img src="pic3.jpg" alt="Wayside Modern House">
+                    <div class="info">
+                        <h2>Wayside Modern House</h2>
+                        <p>MG road, Gurgaon</p>
+                        <p class="price">₹ 18,000/month</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Eligibility Check Page -->
+        <div class="eligibility-check">
+            <h2>Eligibility Check</h2>
+            <form class="eligibility-form">
+                <div class="form-group">
+                    <label for="panCard">PAN Card</label>
+                    <input type="text" id="panCard" placeholder="Enter PAN card number">
+                </div>
+        
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob">
+                </div>
+        
+                <div class="form-group">
+                    <label for="bankDetails">Bank Details</label>
+                    <input type="text" id="bankDetails" placeholder="Enter bank account details">
+                </div>
+        
+                <div class="form-group">
+                    <label for="identityVerification">Identity Verification</label>
+                    <input type="text" id="identityVerification" placeholder="Enter identity verification code">
+                </div>
+        
+                <button type="submit" class="submit-eligibility">Submit</button>
+            </form>
+        </div>
+
+        <!-- Transaction Review Page -->
+        <div class="transaction-review">
+            <div class="selected-item">
+                <center><img src="pic1.jpg" alt="Selected Apartment"></center>
+                <div class="info">
+                    <center><h2>Sky Dandelions Apartment</h2></center>
+                    <center><p>Sector 28, Gurgaon</p></center>
+                    <center><p class="price">₹ 22,020</p></center>
+                </div>
+            </div>
+            <div class="period-selection">
+                <button id="select3" class="period-button">3 months</button>
+                <button id="select6" class="period-button selected">6 months</button>
+                <button id="select9" class="period-button">9 months</button>
+            </div>
+            <div class="payment-details">
+                <center><p id="period-time">Period time: 6 months</p></center>
+                <center><p>Monthly payment: ₹ 22,020</p></center>
+                <center><p>Security deposit: ₹ 0</p></center>
+                <center><p class="total">Total: ₹ 132,120</p></center>
+            </div>
+            <center><button class="pay-button">Pay with Circle</button></center>
+        </div>
+
+        <!-- Approved Offer Page -->
+        <div class="approved-offer">
+            <div class="approved-offer-text">
+                <center><h2 style="color: blue;">One step away from your dream home</h2></center>
+                <p class="highlight">Rent at <span style="color: green;">Zero</span> security deposit</p>
+                <p class="approved"><span class="tick">✔</span>Approved</p>
+                <div class="new-rent" style="background-color: lightblue; padding: 15px; border-radius: 10px;">
+                    <p><span class="tick">✔</span> New Rent Offer: <span style="color: blue;">₹ 20,000</span></p>
+                    <p><span class="tick">✔</span> Zero security deposit <span style="color: blue;">move-in</span></p>
+                    <p><span class="tick">✔</span> 3-Months <span style="color: blue;">salary cover</span></p>
+                </div>
+            </div>
+            <center><button class="pay-button">Pay with Circle</button></center>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
